@@ -1,0 +1,309 @@
+/* General Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.267);
+  background-image: url('BG2.jfif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Header and Navigation Styles */
+#header {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+
+}
+
+.topnav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  z-index: 3;
+}
+
+.topnav a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: rgb(154, 139, 187);
+  border-radius: 5px;
+  margin-left: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.topnav a:hover {
+  background-color: rgb(140, 123, 170);
+  border-bottom: 4px solid blue;
+}
+
+/* Container Styles */
+.container {
+  font-size: 45px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: calc(100vh - 60px);
+  /* Adjusted for header height */
+  padding-left: 2%;
+  text-align: left;
+  background-color: transparent;
+}
+
+
+.container h1 {
+  margin-bottom: 20px;
+  text-align: left;
+  max-width: 800px;
+}
+
+.container button {
+  color: white;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-size: 16px;
+  border-radius: 13px;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.container button a {
+  color: white;
+  text-decoration: none;
+}
+
+.container button:hover {
+  background: linear-gradient(to right, #2575fc, #6a11cb);
+  transform: translateY(-5px);
+}
+
+
+#about,
+#education {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 20px 0;
+  position: relative;
+  z-index: 2;
+}
+
+#about .row h2,
+#education .row h2 {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  text-decoration: overline;
+}
+
+#about .row p,
+#education .row p {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 13px;
+}
+
+/* Education Section Styling */
+#education {
+  background-color: #f9f9f9;
+  margin: 20px auto;
+  padding: 10px;
+  /* Space inside the container */
+  max-width: 900px;
+  /* Reduce the max-width for a smaller container */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Soft shadow for depth */
+}
+
+/* Education List Styling */
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* Space between items */
+}
+
+/* Education Item Styling */
+.education-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-5px);
+  /* Lift effect on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.education-item h3 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 1.6em;
+  font-weight: bold;
+  /* Make the headings stand out */
+}
+
+.education-item p {
+  margin-bottom: 10px;
+  color: #555;
+  /* Slightly lighter color for details */
+}
+
+.education-item p strong {
+  display: block;
+  font-size: 1.1em;
+}
+
+
+#skills {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#skills .row h2 {
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  text-decoration: overline;
+}
+
+
+
+/* Flex Container Styles */
+.flex-container,
+.flex-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Box Styling */
+.box {
+  width: 200px;
+  height: 100px;
+  background: linear-gradient(purple, blue);
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 25px;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+/* Contact Section Styling */
+#contact {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 20px auto;/
+}
+
+/* Heading in Contact Section */
+#contact .row h2 {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-decoration: overline;
+}
+
+/* Form Styling */
+form {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Input Fields and Textarea */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Submit Button Styling */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Label Styling */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+
+/* Social Media Icons */
+#icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  padding: 25px;
+}
+
+#icon-container i {
+  transition: transform 0.3s ease;
+  font-size:60px;
+  gap:30px;
+}
+
+#icon-container i:hover {
+  transform: scale(1.2);
+}
+
+
+.fa-facebook {
+  color: rgb(89, 179, 214);
+}
+
+.fa-instagram {
+  color: #E1306C;
+}
+
+.fa-linkedin-in {
+  color: skyblue;
+}
